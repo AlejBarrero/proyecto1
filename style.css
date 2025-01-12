@@ -1,8 +1,17 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --naranja: #ffa500;
+    --color-borde: #3333334c;
+    --oferta: #bf0019;
+    --precio-original: #737373;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     font-size: 14px;
 }
 
@@ -21,7 +30,7 @@ header {
     padding-bottom: 50px;
     padding-left: 12rem;
     padding-right: 12rem;
-    border-bottom: 1px solid #3333334c;
+    border-bottom: 1px solid var(--color-borde);
 }
 
 main {
@@ -34,12 +43,12 @@ main {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: var(--negro);
     margin-right: 0;
 }
 
 .logo p {
-    color: orange;
+    color: var(--naranja);
     font-weight: bolder;
     font-size: 24px;
     padding-left: 10px;
@@ -69,7 +78,7 @@ main {
 }
 
 .buscar {
-    border-style: 1px solid #3333334c;
+    border-style: 1px solid var(--color-borde);
     border-radius: 5px;
     margin-left: 30px;
     padding-left: 10px;
@@ -81,7 +90,7 @@ main {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: var(--negro);
     margin-left: 30px;
     font-size: 17px;
 }
@@ -96,7 +105,7 @@ main {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: var(--negro);
     margin-left: 30px;
     font-size: 17px;
 }
@@ -120,7 +129,7 @@ main {
 }
 
 .acceso-directo p:last-child {
-    color: orange;
+    color: var(--naranja);
     font-weight: bold;
 }
 
@@ -139,11 +148,11 @@ main {
 .precio-oferta {
     font-size: 20px;
     font-weight: bold;
-    color: #bf0019;
+    color: var(--oferta);
 }
 
 .precio-original {
-    color: #737373;
+    color: var(--precio-original);
     text-decoration: line-through;
 }
 
@@ -159,7 +168,7 @@ figure {
 }
 
 .ofertas {
-    border-top: 1px solid #3333334c;
+    border-top: 1px solid var(--color-borde);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 12rem;
@@ -222,7 +231,7 @@ figure {
 }
 
 .filtros section label:hover {
-    background-color: #7373736d;
+    background-color: var(--color-borde);
 }
 
 .caja-busqueda {
@@ -239,22 +248,22 @@ figure {
 }
 
 .ordenadores {
-    border-top: 1px solid #7373736d;
-    border-bottom: 1px solid #7373736d;
+    border-top: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
     padding-top: 15px;
     padding-bottom: 15px;
     gap: 15px
 }
 
 .componentes {
-    border-bottom: 1px solid #7373736d;
+    border-bottom: 1px solid var(--color-borde);
     padding-top: 15px;
     padding-bottom: 15px;
     gap: 15px
 }
 
 .perifericos {
-    border-bottom: 1px solid #7373736d;
+    border-bottom: 1px solid var(--color-borde);
     padding-top: 15px;
     padding-bottom: 15px;
     gap: 15px
@@ -269,8 +278,8 @@ figure {
     display: flex;
     list-style: none;
     border: none;
-    border-top: 1px solid #3333334c;
-    border-bottom: 1px solid #3333334c;
+    border-top: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
     padding-top: 5rem;
     padding-bottom: 5rem;
     padding-left: 12rem;
@@ -280,7 +289,7 @@ figure {
 }
 
 .footer-nav a {
-    color: black;
+    color: var(--negro);
     text-decoration: none;
 }
 
@@ -345,27 +354,113 @@ figure {
 }
 
 .productos figure {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.582);
     transition: box-shadow 0.3s ease;
 }
 
 .productos figure:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.582);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+
     header {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .buscar {
+        width: 80%;
     }
 
     .productos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .footer-nav {
-        flex-wrap: wrap;
-        gap: 2rem;
+    .precio {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .buscar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .precio {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding-left: 12rem;
+        padding-right: 12rem;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .productos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .buscar {
+        width: 600px;
+    }
+
+    .precio {
+        font-size: 18px;
     }
 }
