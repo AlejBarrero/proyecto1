@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="./assets/img/logo.png" alt="Imagen ordenador, móvil y tablet">
+            <p>PcComponentes</p>
+        </a>
+        <button class="menu">
+            <img src="./assets/img/menu.png" alt="Icono de un menú desplegable">
+            Todas las categorías
+        </button>
+        <input type="search" placeholder="Buscar" class="buscar">
+        <a href="#" class="cuenta">
+            <img src="./assets/img/usuario.png" alt="Icono de usuario">
+            Mi cuenta
+        </a>
+        <a href="#" class="carrito">
+            <img src="./assets/img/carrito.png" alt="Icono de carrito">
+            Mi cesta
+        </a>
+    </header>
+
+    <section class="acceso-directo">
+        <p>Nuevo Samsung -100€</p>
+        <p>Especial Calefacción</p>
+        <p>¡Ofertas de enero!</p>
+    </section>
+
+    <section class="ofertas">
+        <p><b>Expertos en tecnología</b> con un servicio 5 estrellas</p>
+        <img src="./assets/img/ofertas.png" alt="Banner ofertas">
+    </section>
+
+    <section class="articulos">
+        <h2 class="texto-articulos">¡Consigue las ofertas más TOP del momento!</h2>
+        
+        <main>
+            <aside class="filtros">
+                <section class="filtro-busqueda">
+                    <label for="buscar">Búsqueda de filtros</label>
+                    <input type="search" placeholder="   Buscar..." class="caja-busqueda">
+                </section>
+
+                <section class="precio">
+                    <label for="precio">Precio</label>
+                    <input type="range" id="precio" min="14€" max="1999€">
+                </section>
+
+                <section class="ordenadores">
+                    <label for="ordenadores">Ordenadores</label>
+                    <div>
+                        <input type="checkbox" id="portatiles">
+                        <label for="portatiles">Portátiles</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sobremesa">
+                        <label for="sobremesa">Sobremesa</label>
+                    </div>
+                </section>
+
+                <section class="componentes">
+                    <label for="componentes">Componentes</label>
+                    <div>
+                        <input type="checkbox" id="tarjetas-graficas">
+                        <label for="tarjetas-graficas">Tarjetas Gráficas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="discos-duros">
+                        <label for="discos-duros">Discos duros</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="placas-base">
+                        <label for="placas-base">Placas Base</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="procesadores">
+                        <label for="procesadores">Procesadores</label>
+                    </div>
+                </section>
+
+                <section class="perifericos">
+                    <label for="perifericos">Periféricos</label>
+                    <div>
+                        <input type="checkbox" id="monitores">
+                        <label for="monitores">Monitores</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="teclados">
+                        <label for="teclados">Teclados</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="multifunciones">
+                        <label for="multifunciones">Multifunciones</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="memorias-usb" name="memorias-usb">
+                        <label for="memorias-usb">Memorias USB Pendrive</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sistemas-videoconferencia">
+                        <label for="sistemas-videoconferencia">Sistemas de Videoconferencia</label>
+                    </div>
+                </section>
+
+                <section class="varios">
+                    <label for="buscar">Smartphones y tablets</label>
+                    <label for="buscar">Televisión y vídeo</label>
+                    <label for="buscar">Sonido</label>
+                    <label for="buscar">Electrodomésticos</label>
+                    <label for="buscar">Relojes Inteligentes</label>
+                    <label for="buscar">Fotografía y Accesorios</label>
+                    <label for="buscar">Marcas</label>
+                    <label for="buscar">Disponibilidad en tienda</label>
+                    <label for="buscar">Entrega</label>
+                    <label for="buscar">Valoración</label>
+                    <label for="buscar">Vendido por</label>
+                </section>
+            </aside>
+
+            <section class="productos">
+                <figure>
+                    <img src="./assets/img/168-lenovo-sh1-wireless-auriculares-deportivos-bluetooth-negros.webp" alt="Imagen de unos auriculares Lenovo SH1">
+                    <figcaption>
+                        <p>Lenovo SH1 Wireless Auriculares Deportivos Bluetooth Negros</p>
+                        <span class="precio-oferta">16,97€</span>
+                        <span class="precio-original">21,99€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/174-forgeon-clutch-teclado-gaming-wireless-rgb-60-switch-red.webp" alt="Imagen de un teclado Forgeon Clutch">
+                    <figcaption>
+                        <p>Forgeon Clutch Teclado Gaming Wireless RGB 60% Switch Red</p>
+                        <span class="precio-oferta">79,98€</span>
+                        <span class="precio-original">97,90€</span>
+                </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/196-xiaomi-redmi-note-13-8-256gb-negro-libre.webp" alt="Imagen de un Xiaomi Redmi Note 13">
+                    <figcaption>
+                        <p>Xiaomi Redmi Note 13 8/256GB Negro</p>
+                        <span class="precio-oferta">169,98€</span>
+                        <span class="precio-original">249,99€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1253-apple-ipad-2024-109-wifi-64gb-plata-134e0bd3-0d5c-45c9-9ac1-bae5de57dddc.webp" alt="Imagen de un iPad 2024">
+                    <figcaption>
+                        <p>Apple iPad 2024 10.9" WiFi 64GB Plata</p>
+                        <span class="precio-oferta">379,99€</span>
+                        <span class="precio-original">429€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1348-toshiba-canvio-basics-25-2tb-usb-32-negro-opiniones.jpg" alt="Imagen de un disco duro Toshiba">
+                    <figcaption>
+                        <p>Toshiba Canvio Basics 2TB Disco Externo Portátil USB 3.2 Negro</p>
+                        <span class="precio-oferta">66,99€</span>
+                        <span class="precio-original">82,95€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1363-hp-victus-gaming-16-r0036ns-intel-core-i7-13620h-32gb-1tb-ssd-rtx-4060-161-30d96809-76dd-4c80-9557-320067220314.webp" alt="Imagen de un portátil HP Victus Gaming">
+                    <figcaption>
+                        <p>HP Victus Gaming 16-r0036ns Intel Core i7-13620H/32GB/1TB SSD/RTX 4060/16.1"</p>
+                        <span class="precio-oferta">1149€</span>
+                        <span class="precio-original">1399€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1458-asus-dual-geforce-rtx-4060-evo-oc-edition-8gb-gddr6-dlss3.webp" alt="Imagen de una GPU Asus RTX 4060">
+                    <figcaption>
+                        <p>ASUS Dual GeForce RTX 4060 EVO OC Edition 8GB GDDR6 DLSS3</p>
+                        <span class="precio-oferta">319,99€</span>
+                        <span class="precio-original">399,99€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1698-lenovo-thinkvision-t24h-20-238-led-ips-wqhd-usb-c.jpg" alt="Imagen de un monitor Lenovo Thinkvision T24h-20">
+                    <figcaption>
+                        <p>Lenovo Thinkvision T24h-20 23.8" LED IPS WQHD USB-C</p>
+                        <span class="precio-oferta">499€</span>
+                        <span class="precio-original">599€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1996-amd-ryzen-7-9800x3d-47-52ghz.webp" alt="Imagen de un procesador AMD Ryzen 7 9800X3D">
+                    <figcaption>
+                        <p>Procesador AMD Ryzen 7 9800X3D 4.7/5.2GHz</p>
+                        <span class="precio-oferta">629,90€</span>
+                        <span class="precio-original">749,99€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/logitech-g203-lightsync-2nd-gen-raton-gaming-8000dpi-rgb-negro.webp" alt="Imagen de un ratón Logitech G203 Lightsync">
+                    <figcaption>
+                        <p>Logitech G203 Lightsync 2nd Gen Ratón Gaming 8000DPI RGB Negro</p>
+                        <span class="precio-oferta">35,65€</span>
+                        <span class="precio-original">44,99€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/176-blackview-mp100-mini-pc-amd-ryzen-7-5700u-16gb-512gb-ssd.webp" alt="Imagen de un mini PC Blackview MP100">
+                    <figcaption>
+                        <p>Mini PC Blackview MP100 Mini PC AMD Ryzen 7 5825U/16GB/512GB SSD Negro</p>
+                        <span class="precio-oferta">319,99€</span>
+                        <span class="precio-original">374,89€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1288-dreame-l20-ultra-robot-aspirador-con-base-de-autovaciado.webp" alt="Imagen de un robot aspirador Dreame L20 Ultra">
+                    <figcaption>
+                        <p>Dreame L20 Ultra Robot Aspirador con Base de Autovaciado</p>
+                        <span class="precio-oferta">899€</span>
+                        <span class="precio-original">999€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1130-xiaomi-mi-smart-projector-2-proyector-ansi-dlp-full-hd-500-lumenes-negro-blanco.jpg" alt="Imagen de un proyector Xiaomi Mi Smart Projector 2">
+                    <figcaption>
+                        <p>Xiaomi Mi Smart Projector 2 Proyector ANSI DLP FullHD 500 Lúmenes</p>
+                        <span class="precio-oferta">456,99€</span>
+                        <span class="precio-original">699,99€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/1923-xiaomi-redmi-buds-5-pro-auriculares-inalambricos-aurora-purpura.webp" alt="Imagen de unos auriculares Xiaomi Redmi Buds 5 Pro">
+                    <figcaption>
+                        <p>Xiaomi Redmi Buds 5 Pro Auriculares Inalámbricos Aurora Púrpura</p>
+                        <span class="precio-oferta">55,99€</span>
+                        <span class="precio-original">69,98€</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/img/image-mini2-19-0403-0294-10-white-ttq-r04-simp.jpg" alt="Imagen de un altavoz Google Nest Mini">
+                    <figcaption>
+                        <p>Google Nest Mini Altavoz Inteligente con Asistente Tiza</p>
+                        <span class="precio-oferta">39,99€€</span>
+                        <span class="precio-original">59€</span>
+                    </figcaption>
+                </figure>
+            </section>
+        </main>
+
+    <section class="ofertas">
+        <h2>Ofertas de enero en relojes inteligentes y wearables</h2>
+            <p>Si este año también te has propuesto cambiar tus hábitos y tomarte el deporte en serio, aprovecha las <b>ofertas de enero de 2025</b> para comprar un <b>reloj deportivo</b>, un <b>reloj inteligente</b> o una <b>pulsera de actividad</b>. Obtén los mejores precios en los <b>wearables</b> para superar tus récords deportivos y fijarte nuevos objetivos.
+
+                En nuestra selección de ofertas, puedes encontrar <b>relojes inteligentes y monitores de frecuencia cardíaca</b> de las mejores marcas, como Garmin, Fitbit y Amazfit, a precios mucho más bajos. Aprovecha las <b>ofertas de enero</b> y el único costo que tienes que marcar es el que indica tu reloj inteligente.</p>
+        <h2>Ofertas de enero en televisores</h2>
+            <p>Es hora de renovar tu vieja TV y aprovechar las <b>ofertas de enero</b> en <b>televisores y smart TVs</b> para comenzar a disfrutar de una experiencia de cine en casa.
+
+                Aprovecha para llevar a casa la alta definición con una TV LED de última generación con resolución Full HD o 4K. Vas a alucinar con la mejor imagen y calidad sonora en el mercado a precios irresistibles.</p>
+        <h2>Ofertas de enero en teléfonos móviles y smartphones</h2>
+            <p>Año nuevo, vida nueva. ¿Y por qué no, también un <b>nuevo smartphone</b>? Las ofertas de enero son fuertes este año y seguramente tendrás los ojos puestos en un <b>teléfono móvil</b>, cuídate y juega sin miedo con los teléfonos móviles en promoción en nuestro catálogo.
+
+                <b>Teléfonos móviles baratos</b> de grandes marcas y otros pioneros en nuestro país, un valor inmejorable gracias a nuestros descuentos.</p>
+        <h2>Ofertas de enero en ordenadores portátiles y de escritorio</h2>
+            <p>Para el trabajo, el ocio en casa o para las oficinas, hemos rebajado <b>ordenadores portátiles y de escritorio</b> para ayudarte a actualizar tu ordenador y ayudarte a superar <b>enero</b> con toda la fuerza.
+
+                En este momento, un <b>ordenador portátil</b> es perfecto para cualquier escenario, incluso el más exigente, teniendo en cuenta los avances que permiten integrar componentes mejores y más potentes, como <b>tarjetas gráficas dedicadas de última generación</b>, así como pantallas de alta resolución y baterías de larga duración.
+                
+                Los <b>ordenadores de escritorio</b> disponibles también son una buena manera de dar ritmo a nuestros días, pasando de un ordenador lento y obsoleto a uno moderno y potente. Además, todos nuestros desktops PcCom han sido ensamblados por expertos profesionales con mucho cuidado.</p>
+        <h2>Ofertas de enero en electrónica</h2>
+            <p>Si no buscas <b>teléfonos móviles, ordenadores o smartphones</b>, no te preocupes, las ofertas de Navidad no van a terminar para ti.
+
+                Si eres un jugador, nuestras ofertas de enero en <b>videojuegos y consolas</b> seguramente te entusiasmarán para este nuevo año. Y no olvidamos a los geeks de la tecnología y de la electrónica, ni a aquellos que buscan productos de cuidado personal, electrodomésticos como un <b>robot de cocina</b>, planchas y también <b>robots aspiradores</b> como el <b>Roomba</b>.</p>
+    </section>
+
+    <footer>
+        <section class="footer-nav">
+            <ul>
+                <li>Por qué comprar</li>
+                <li>Cómo comprar</li>
+                <li>Formas de pago</li>
+                <li>Gastos de envío</li>
+                <li>Preguntas frecuentes</li>
+            </ul>
+            <ul>
+                <li>Quiénes somos</li>
+                <li>Quiénes somos</li>
+                <li>Compromisos</li>
+                <li>Nuestras Tiendas</li>
+                <li>Nuestras Marcas</li>
+            </ul>
+            <ul>
+                <li>Contactar</li>
+                <li>Contacto y Ayuda</li>
+                <li>Devoluciones y Garantías</li>
+                <li>Wiki PcComponentes</li>
+                <li>Opina y Gana</li>
+            </ul>
+            <ul>
+                <li>Otros</li>
+                <li>Replay</li>
+                <li>Black Friday</li>
+                <li>Cyber Monday</li>
+                <li>PcDays</li>
+            </ul>
+            <ul class="comunidad">
+                <li>
+                    Comunidad
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src="./assets/img/instagram.png" alt="Logo Instagram">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src="./assets/img/facebook.png" alt="Logo Facebook">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src="./assets/img/telegram.png" alt="Logo Telegram">
+                        Telegram
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src="./assets/img/youtube.png" alt="Logo YouTube">
+                        Youtube
+                    </a>
+                </li>
+            </ul>
+            <ul class="formas-pago">
+                <li>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src="./assets/img/mastercard.png" alt="Logo MasterCard">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src="./assets/img/visa.png" alt="Logo Visa">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src="./assets/img/paypal.png" alt="Logo PayPal">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="copyright">
+            <p>© Alejandro Barrero. Avenida Constitución. 33011, La Corredoria, Oviedo. ESPAÑA</p>
+        </section>
+    </footer>
+</body>
+</html>
